@@ -422,9 +422,10 @@
       }
       .athletes-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        margin-top: 3.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 860px;
+        margin: 3.5rem auto 0;
       }
       .athlete-card {
         position: relative;
@@ -438,7 +439,7 @@
       }
       .athlete-img-wrap {
         position: relative;
-        height: 280px;
+        height: 400px;
         overflow: hidden;
       }
       .athlete-img-wrap img {
@@ -457,7 +458,7 @@
         background: linear-gradient(
           to top,
           #000 0%,
-          rgba(0, 0, 0, 0.4) 50%,
+          rgba(0, 0, 0, 0.3) 50%,
           transparent 100%
         );
       }
@@ -479,7 +480,7 @@
         padding: 1.25rem;
       }
       .athlete-name {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
         font-weight: 900;
         color: #fff;
       }
@@ -694,8 +695,7 @@
         .contact-grid {
           grid-template-columns: 1fr;
         }
-        .services-grid,
-        .athletes-grid {
+        .services-grid {
           grid-template-columns: repeat(2, 1fr);
         }
         .testimonials-grid {
@@ -716,9 +716,6 @@
         .nav-links {
           display: none;
         }
-        .testimonials-grid {
-          grid-template-columns: 1fr;
-        }
       }
     </style>
   </head>
@@ -738,7 +735,7 @@
           <a href__="#testimonials">Depoimentos</a>
           <a href__="#contact">Contato</a>
           <a
-            href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado!"
+            href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado%20%F0%9F%92%AA"
             target="_blank"
             class="nav-cta"
             >COMEÇAR</a
@@ -763,7 +760,7 @@
         </p>
         <div class="hero-btns">
           <a
-            href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado!"
+            href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado%20%F0%9F%92%AA"
             target="_blank"
             class="btn-primary"
           >
@@ -826,7 +823,7 @@
           <div class="about-img-wrap">
             <div class="about-glow"></div>
             <img
-              src="jeguela.jpg"
+              src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&q=80"
               alt="Jhonne Personal Trainer"
               class="about-img"
             />
@@ -990,8 +987,8 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z" />
-                <path d="M12 6v6l4 2" />
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
               </svg>
             </div>
             <div class="service-title">Orientação Nutricional</div>
@@ -1075,22 +1072,22 @@
             MEUS <span class="orange">ATLETAS</span>
           </h2>
           <p class="section-desc">
-            Cada aluno é uma história de superação. Conheça alguns dos
-            guerreiros que já transformaram seus corpos.
+            Cada aluno é uma história de superação. Conheça os guerreiros que já
+            transformaram seus corpos.
           </p>
         </div>
         <div class="athletes-grid">
           <div class="athlete-card">
             <div class="athlete-img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80"
-                alt="Pedro Alves"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699ccfc00b517fcb2b7aa8fd/a4d1d7857_danieljeguela.jpg"
+                alt="Daniel"
               />
               <div class="athlete-overlay"></div>
-              <div class="athlete-goal-badge">Hipertrofia</div>
+              <div class="athlete-goal-badge">Competição</div>
             </div>
             <div class="athlete-info">
-              <div class="athlete-name">Pedro Alves</div>
+              <div class="athlete-name">Daniel</div>
               <div class="athlete-meta">
                 <div class="athlete-result">
                   <svg
@@ -1105,7 +1102,7 @@
                     <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
                     <polyline points="17 6 23 6 23 12" />
                   </svg>
-                  +12kg de massa muscular
+                  Campeão em competição
                 </div>
                 <div class="athlete-time">
                   <svg
@@ -1117,10 +1114,10 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
                   </svg>
-                  6 meses
+                  Atleta Jhonne
                 </div>
               </div>
             </div>
@@ -1129,14 +1126,14 @@
           <div class="athlete-card">
             <div class="athlete-img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1609899537878-4c9746dab4c0?w=400&q=80"
-                alt="Ana Paula"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699ccfc00b517fcb2b7aa8fd/e25abb1bb_cezarjeguela.jpg"
+                alt="Cézar"
               />
               <div class="athlete-overlay"></div>
-              <div class="athlete-goal-badge">Emagrecimento</div>
+              <div class="athlete-goal-badge">Bodybuilding</div>
             </div>
             <div class="athlete-info">
-              <div class="athlete-name">Ana Paula</div>
+              <div class="athlete-name">Cézar</div>
               <div class="athlete-meta">
                 <div class="athlete-result">
                   <svg
@@ -1151,7 +1148,7 @@
                     <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
                     <polyline points="17 6 23 6 23 12" />
                   </svg>
-                  -18kg de gordura
+                  Overall em campeonato
                 </div>
                 <div class="athlete-time">
                   <svg
@@ -1163,194 +1160,10 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
                   </svg>
-                  5 meses
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="athlete-card">
-            <div class="athlete-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?w=400&q=80"
-                alt="Carlos Eduardo"
-              />
-              <div class="athlete-overlay"></div>
-              <div class="athlete-goal-badge">Definição</div>
-            </div>
-            <div class="athlete-info">
-              <div class="athlete-name">Carlos Eduardo</div>
-              <div class="athlete-meta">
-                <div class="athlete-result">
-                  <svg
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                    <polyline points="17 6 23 6 23 12" />
-                  </svg>
-                  8% gordura corporal
-                </div>
-                <div class="athlete-time">
-                  <svg
-                    width="13"
-                    height="13"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  4 meses
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="athlete-card">
-            <div class="athlete-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80"
-                alt="Fernanda Lima"
-              />
-              <div class="athlete-overlay"></div>
-              <div class="athlete-goal-badge">Condicionamento</div>
-            </div>
-            <div class="athlete-info">
-              <div class="athlete-name">Fernanda Lima</div>
-              <div class="athlete-meta">
-                <div class="athlete-result">
-                  <svg
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                    <polyline points="17 6 23 6 23 12" />
-                  </svg>
-                  Maratona completada
-                </div>
-                <div class="athlete-time">
-                  <svg
-                    width="13"
-                    height="13"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  8 meses
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="athlete-card">
-            <div class="athlete-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=400&q=80"
-                alt="Rafael Costa"
-              />
-              <div class="athlete-overlay"></div>
-              <div class="athlete-goal-badge">Força</div>
-            </div>
-            <div class="athlete-info">
-              <div class="athlete-name">Rafael Costa</div>
-              <div class="athlete-meta">
-                <div class="athlete-result">
-                  <svg
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                    <polyline points="17 6 23 6 23 12" />
-                  </svg>
-                  180kg no levantamento
-                </div>
-                <div class="athlete-time">
-                  <svg
-                    width="13"
-                    height="13"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  7 meses
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="athlete-card">
-            <div class="athlete-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80"
-                alt="Juliana Mendes"
-              />
-              <div class="athlete-overlay"></div>
-              <div class="athlete-goal-badge">Saúde</div>
-            </div>
-            <div class="athlete-info">
-              <div class="athlete-name">Juliana Mendes</div>
-              <div class="athlete-meta">
-                <div class="athlete-result">
-                  <svg
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                    <polyline points="17 6 23 6 23 12" />
-                  </svg>
-                  Reverteu sedentarismo
-                </div>
-                <div class="athlete-time">
-                  <svg
-                    width="13"
-                    height="13"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  3 meses
+                  Atleta Jhonne
                 </div>
               </div>
             </div>
@@ -1360,7 +1173,7 @@
         <div class="athletes-cta">
           <p>Quer fazer parte desse time?</p>
           <a
-            href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado!"
+            href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado%20%F0%9F%92%AA"
             target="_blank"
             class="btn-primary"
             style="font-size: 1.05rem; padding: 1rem 2.5rem"
@@ -1610,7 +1423,7 @@
               </div>
               <div>
                 <div class="contact-label">Localização</div>
-                <div class="contact-value">juazeiro, BA</div>
+                <div class="contact-value">Bahia, BA</div>
               </div>
             </div>
             <div class="contact-item">
@@ -1635,7 +1448,7 @@
               </div>
             </div>
             <a
-              href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado!"
+              href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado%20%F0%9F%92%AA"
               target="_blank"
               class="wa-btn"
             >
@@ -1668,7 +1481,7 @@
               seu melhor físico. Jhonne está esperando por você!
             </p>
             <a
-              href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado!"
+              href__="https://wa.me/5574988154855?text=Ol%C3%A1%20Jhonne!%20Vim%20pelo%20seu%20site%20e%20quero%20come%C3%A7ar%20meu%20treino%20personalizado%20%F0%9F%92%AA"
               target="_blank"
               class="btn-primary"
               style="justify-content: center; width: 100%"
